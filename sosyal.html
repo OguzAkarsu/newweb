@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="still.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.png" class="logo" alt="socialbook,facebookclon,socialmedia,turkiye">
+            <ul>
+                <li><img src="notification.png" alt="socialmedia icon"></li>
+                <li><img src="inbox.png"></li>
+                <li><img src="video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="profile-pic.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>Mehmet Yakup</p>
+                        <a href="#">Profili Gör</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="feedback.png">
+                    <div>
+                        <p>Öneri oluştur</p>
+                        <a href="#"> Kendimizi geliştirebilmemiz için önerilerinizi Yazın</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="display.png" class="settings-icon">
+                    <a href="#"> Display & Accessibility <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="logout.png" class="settings-icon">
+                    <a href="#"> Logout <img src="arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="news.png"> Akış </a>
+                <a href="#"><img src="friends.png"> Arkadaşlar</a>
+                <a href="#"><img src="group.png"> Gruplar</a>
+                <a href="#"><img src="watch.png"> İzle</a>
+                <a href="#"><img src="marketplace.png"> Alışveriş </a>
+                <a href="#">Daha Fazla...</a>
+            </div>
+            <div class="shortcut-links">
+                <p> Kısayollar </p>
+                <a href=""><img src="shortcut-1.png"> Web Yazılım</a>
+                <a href=""><img src="shortcut-2.png"> Udemig Course</a>
+                <a href=""><img src="shortcut-3.png"> Full-Stack Development</a>
+                <a href=""><img src="shortcut-4.png"> Website Uzmanları</a>
+            </div>
+        </div>
+        <!---- main content-->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="upload.png" alt="">
+                    <p>Gönderi oluştur</p>
+                </div>
+                <div class="story story2">
+                    <img src="member-4.png">
+                    <p>Hasan</p>
+                </div>
+                <div class="story story3">
+                    <img src="member-5.png">
+                    <p>Hüseyin</p>
+                </div>
+                <div class="story story4">
+                    <img src="member-7.png">
+                    <p>Ahmet </p>
+                </div>
+                <div class="story story5">
+                    <img src="member-9.png">
+                    <p>Mehmet</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>Mehmet Yakup</p>
+                        <small>Yönetici <i class="bi bi-person-check-fill"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Ne düşünüyorsunuz?"></textarea>
+                    <div class="add-post-links">
+                        <a href=""><img src="live-video.png"> Canlı Video</a>
+                        <a href=""><img src="photo.png"> Fotoğraf</a>
+                        <a href=""><img src="feeling.png"> Ne Düşünüyorsun</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile-pic.png" alt="">
+                        <div>
+                            <p>Mehmet Yakup</p>
+                            <span>Ekim 10 2023,17:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+
+                </div>
+
+                <p class="post-text">Takip Et <span> @WebTasarımcı Udemig </span> Daha fazla video izlemek için YouTube
+                    kanalı
+                    Web sitesi geliştirme ve yazılım teknolojisinde <a href="#"> #WebTasarımcıTR </a> <a href="#">
+                        #izlesene </a></p>
+                <img src="feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 121</div>
+                        <div><img src="comments.png"> 111</div>
+                        <div><img src="share.png"> 91</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png"> <i class="bi bi-caret-down-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile-pic.png" alt="">
+                        <div>
+                            <p>Mehmet Yakup</p>
+                            <span>Ekim 10 2023,17:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+
+                </div>
+
+                <p class="post-text">Takip Et <span> @WebTasarımcı Udemig </span> Daha fazla video izlemek için YouTube
+                    kanalı
+                    Web sitesi geliştirme ve yazılım teknolojisinde <a href="#"> #WebTasarımcıTR </a> <a href="#">
+                        #izlesene </a></p>
+                <img src="feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 121</div>
+                        <div><img src="comments.png"> 111</div>
+                        <div><img src="share.png"> 91</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png"> <i class="bi bi-caret-down-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile-pic.png" alt="">
+                        <div>
+                            <p>Mehmet Yakup</p>
+                            <span>Ekim 10 2023,17:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+
+                </div>
+
+                <p class="post-text">Takip Et <span> @WebTasarımcı Udemig </span> Daha fazla video izlemek için YouTube
+                    kanalı
+                    Web sitesi geliştirme ve yazılım teknolojisinde <a href="#"> #WebTasarımcıTR </a> <a href="#">
+                        #izlesene </a></p>
+                <img src="feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 121</div>
+                        <div><img src="comments.png"> 111</div>
+                        <div><img src="share.png"> 91</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png"> <i class="bi bi-caret-down-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile-pic.png" alt="">
+                        <div>
+                            <p>Mehmet Yakup</p>
+                            <span>Ekim 10 2023,17:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+
+                </div>
+
+                <p class="post-text">Takip Et, Beğen ve Paylaş <span> @WebTasarımcı Udemig </span> Sorularınızı
+                    sorabilirsiniz.
+                    Web sitesi geliştirme ve yazılım teknolojisinde <a href="#"> #WebTasarımcıTR </a> <a href="#">#Web
+                        Software </a></p>
+                <img src="feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 101</div>
+                        <div><img src="comments.png"> 101</div>
+                        <div><img src="share.png"> 100</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png"> <i class="bi bi-caret-down-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile-pic.png" alt="">
+                        <div>
+                            <p>Mehmet Yakup</p>
+                            <span>Ekim 10 2023,17:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+
+                </div>
+
+                <p class="post-text">Takip Et, Beğen ve Paylaş <span> @WebTasarımcı Udemig </span> Sorularınızı
+                    sorabilirsiniz.
+                    Web sitesi geliştirme ve yazılım teknolojisinde <a href="#"> #WebTasarımcıTR </a> <a href="#">#Web
+                        Software </a></p>
+                <img src="feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 71</div>
+                        <div><img src="comments.png"> 51</div>
+                        <div><img src="share.png"> 23</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png"> <i class="bi bi-caret-down-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>Mehmet Yakup</p>
+                        <small>Yönetici <i class="bi bi-person-check-fill"></i></small>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Fazlasını Yükle</button>
+
+
+        </div>
+        <!-- right-sidebar --->
+
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Toplantılar</h4>
+                <a href="#">Hepsini Gör</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>17</h3>
+                    <span>Ekim</span>
+                </div>
+                <div class="right-event">
+                    <h4>Inov-4 Turkiye</h4>
+                    <p><i class="bi bi-send"></i> Eyüp- Feshane</p>
+                    <a href="#"> Daha Fazla..</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>01</h3>
+                    <span>Ocak</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="bi bi-send"></i> IFM - Istanbul</p>
+                    <a href="#"> Daha Fazla..</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Reklamlar</h4>
+                <a href="#">Kapat</a>
+            </div>
+            <img src="advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Muhabbetler</h4>
+                <a href="#">Chat gizle</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="m2.jpg">
+                </div>
+                <p>Hüseyin Demir</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="m3.jpg">
+                </div>
+                <p>Ali Nur</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="member-4.png">
+                </div>
+                <p>Vahdet Tek</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>CopyRight2023 - SosyalBook Sosyal İletişim Ağı</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
