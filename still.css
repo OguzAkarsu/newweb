@@ -51,6 +51,7 @@ nav {
 .nav-left ul li img {
     width: 29px;
     margin: 2px 15px;
+	cursor: pointer;
 }
 
 .nav-user-icon img {
